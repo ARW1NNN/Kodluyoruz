@@ -1,0 +1,55 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Big-O gösterimini yazınız.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+
+
+Başlangıçta, dizinin ilk elemanı (22) sıralanmış kabul edilir.
+Dizi: [22, 27, 16, 2, 18, 6]
+
+İkinci adımda, 27 sayısı 22'den büyük olduğu için yer değiştirir.
+Dizi: [22, 27, 16, 2, 18, 6]
+
+Üçüncü adımda, 16 sayısı önceki elemanlardan herhangi biriyle karşılaştırılır. 16, 27'den küçük olduğu için yer değiştirir.
+Dizi: [16, 22, 27, 2, 18, 6]
+
+Dördüncü adımda, 2 sayısı önceki elemanlardan herhangi biriyle karşılaştırılır. 2, 27'den küçük olduğu için yer değiştirir.
+Dizi: [2, 16, 22, 27, 18, 6]
+
+Beşinci adımda, 18 sayısı 27'den küçük olduğu için yer değiştirir ve 22'den büyük olduğu için yer değiştirmez. 18, 16'dan küçük olduğu için yer değiştirir.
+Dizi: [2, 16, 18, 22, 27, 6]
+
+Altıncı ve son adımda, 6 sayısı önceki elemanlardan herhangi biriyle karşılaştırılır. 6, 27'den küçük olduğu için yer değiştirir ve 22'den küçük olduğu için yer değiştirir. 6, 18'den küçük olduğu için yer değiştirir ve 16'dan küçük olduğu için yer değiştirir.
+Dizi: [2, 6, 16, 18, 22, 27]
+
+
+Big-O gösterimi: Insertion Sort algoritmasının en kötü durum (worst case) zaman karmaşıklığı O(n^2)'dir. Ortalama durum (average case) ve en iyi durum (best case) zaman karmaşıklığı da O(n^2)'dir. 
+Bu nedenle, Insertion Sort, n elemanlı bir diziyi sıralamak için O(n^2) zaman karmaşıklığına sahiptir.
+
+Time Complexity:
+Dizi sıralandıktan sonra 18 sayısı en kötü durum (worst case) kapsamına girer. Çünkü 18 sayısı sondan ikinci elemandır ve her elemanla karşılaştırma yapılması gerekmektedir.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Başlangıçta, en küçük eleman 2 olarak kabul edilir. Bu eleman 2. indextedir. Dizinin başındaki eleman (7) ile yer değiştirir.
+Dizi: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+İkinci adımda, en küçük eleman 3 olarak kabul edilir. Bu eleman 1. indextedir. Dizinin ikinci elemanı (3) ile yer değiştirir.
+Dizi: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+Üçüncü adımda, en küçük eleman 4 olarak kabul edilir. Bu eleman 6. indextedir. Dizinin üçüncü elemanı (5) ile yer değiştirir.
+Dizi: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+Dördüncü adımda, en küçük eleman 5 olarak kabul edilir. Bu eleman 6. indextedir. Dizinin dördüncü elemanı (8) ile yer değiştirir.
+Dizi: [2, 3, 4, 5, 7, 9, 8, 15, 6]
