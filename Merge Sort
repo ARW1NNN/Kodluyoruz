@@ -1,0 +1,55 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+
+
+
+Başlangıçta, verilen diziyi iki eşit parçaya bölüyoruz:
+Sol parça: [16, 21, 11]
+Sağ parça: [8, 12, 22]
+
+İlk adımda sol ve sağ parçaları da aynı şekilde ikiye bölerek daha küçük parçalara ayırıyoruz:
+Sol parça: [16] [21, 11]
+Sağ parça: [8] [12, 22]
+
+İkinci adımda sol ve sağ parçaları tekrar ikiye bölerek daha küçük parçalara ayırıyoruz:
+Sol parça: [16]
+Sağ parça: [21] [11]
+Sağ parçayı da aynı şekilde bölersek:
+Sol parça: [21]
+Sağ parça: [11]
+
+Üçüncü adımda sol ve sağ parçaları birleştirerek sıralı parçalar elde ediyoruz:
+Sol parça: [16]
+Sağ parça: [11, 21]
+İki parçayı birleştirerek sıralı parçaları elde ederiz:
+Sıralı sol parça: [16]
+Sıralı sağ parça: [11, 21]
+
+Daha sonra başlangıçtaki sağ parçayı da aynı şekilde böleriz:
+Sol parça: [8]
+Sağ parça: [12, 22]
+İki parçayı birleştirerek sıralı parçaları elde ederiz:
+Sıralı sol parça: [8]
+Sıralı sağ parça: [12, 22]
+
+Son adımda, sıralı sol ve sağ parçaları birleştirerek tamamen sıralı bir dizi elde ederiz:
+Birleştirilmiş dizi: [8, 12, 16, 21, 11, 22]
+
+Son olarak, sıralı diziyi tekrar ikiye böleriz:
+Sol parça: [8, 12, 16]
+Sağ parça: [21, 11, 22]
+
+Sol ve sağ parçaları aynı şekilde sıralarız:
+Sıralı sol parça: [8, 12, 16]
+Sıralı sağ parça: [11, 21, 22]
+
+Son olarak, sıralı sol ve sağ parçaları birleştirerek tamamen sıralı bir dizi elde ederiz:
+Birleştirilmiş dizi: [8, 11, 12, 16, 21, 22]
+
+
+
+Big-O gösterimi: Merge Sort algoritmasının zaman karmaşıklığı O(n log n)'dir. Yani, n elemanlı bir diziyi sıralamak için ortalama olarak O(n log n) adımda tamamlayabilir.
+Bu, Merge Sort'un verimli bir sıralama algoritması olduğunu gösterir.
