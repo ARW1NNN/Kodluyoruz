@@ -1,0 +1,16 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+
+
+
+İlk eleman olan 7, ağacın kök düğümüdür (root):
+root 7
+İkinci eleman olan 5, kök düğümün solunda yer alır:
+Üçüncü eleman olan 1, 5'in solunda yer alır.
+Dördüncü eleman olan 8, kök düğümün sağına eklenir.
+Beşinci eleman olan 3, 5'in solunda yer alır.
+Altıncı eleman olan 6, 5'in sağında yer alır.
+Yedinci eleman olan 0, 1'in solunda yer alır.
+Sekizinci eleman olan 9, 8'in sağına eklenir.
+Dokuzuncu eleman olan 4, 3'ün sağına eklenir.
+Son olarak, onuncu eleman olan 2, 3'ün solunda yer alır.
